@@ -1,0 +1,188 @@
+#header-full:hover {
+    background-color: #50c7f5;
+}
+
+#header-full {
+    background: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.3s ease 0.1s;
+}
+
+.searchBar input {
+    font-size: 12px;
+    color: #fff;
+    height: 40px;
+    padding-bottom: 0;
+    padding-top: 0;
+    border-radius: 30px;
+    float: left;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.nav-item a {
+    color: white;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider ul li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -8vh;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.slider ul li.active-slider {
+    opacity: 1;
+}
+
+.title {
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 1px 1px #545b62;
+    display: inline-grid;
+}
+
+.home-session {
+    position: relative;
+}
+
+.home-product {
+    margin: 0px 160px  32px 160px;
+}
+
+.product-image {
+    width: 222px;
+}
+
+.product-title {
+    margin-top: 7rem;
+}
+
+.product-title b {
+    font-size: 1.5rem;
+}
+
+.product-title h4 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.product-slider {
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+}
+  
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.item {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.card-UV {
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: #60BFF4;
+    color: white;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    min-width: 20%;
+}
+
+.UV-Card {
+    border-radius: 10px;
+    background-color: white;
+    color: #60BFF4;
+}
+.UV-Info {
+    padding: 0.5rem;
+}
+
+.UV-Info .UV-value {
+    font-size: 3rem;
+}
+
+.UV-Info p {
+    margin-top: 1rem;
+}

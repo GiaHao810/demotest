@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/444205d38d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid" id="header-full">
+        <div class="container-fluid h-100 p-2 d-flex align-items-center justify-content-between">
+            <div class="dropdown">
+                <button class="btn btn-secondary" type="button" data-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">LỊCH SỬ THƯƠNG HIỆU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">SẢN PHẨM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">TƯ VẤN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">THÔNG ĐIỆP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">LIÊN HỆ</a>
+                </li>
+            </ul>
+
+            <div class="align-self-center d-none d-lg-flex">
+                <div class="search-frm">
+                    <div id="Search" class="Search">
+                        <div class="searchBar">
+                            <input class="search-query form-control input-sm txt-search"
+                                placeholder="Tìm kiếm..." type="text"> 
+                                <a class="searchButton bt-search" href="javascript:;" id="Search-Button-Product"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid p-0">
+        <div class="slider">
+            <ul>
+                <li >
+                    <img src="/pic/slider/Slide 1.jpg" loading="lazy">
+                </li>
+                <li>
+                    <img src="/pic/slider/Slide 2.jpg" loading="lazy">
+                </li>
+                <li>
+                    <img src="/pic/slider/Slide 3.jpeg" loading="lazy">
+                </li>
+                <li>
+                    <img src="/pic/slider/Slide 4.jpg" loading="lazy">
+                </li>
+                <li>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tY7MZBhfbXM?si=yheu0U99Ch3V6JYp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6DZgaBXvR5U?si=JtoDbNSnf28RySU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container-body">
+        <div class="container-fluid card-group d-flex justify-content-between align-items-center">
+            <div class="card m-0 p-0 border-0">
+                <img src="/pic/body/S1_SkinAqua_BG.png" alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="title mt-auto text-center">SKIN AQUA</div>
+                </div>
+            </div>
+            <div class="card m-0 p-0 border-0">
+                <img src="/pic/body/S1_ToneUp_BG.png" alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="title mt-auto text-center">TONE UP</div>
+                </div>
+            </div>
+            <div class="card m-0 p-0 border-0">
+                <img src="/pic/body/S1_Sunplay_BG.png" alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="title mt-auto text-center">SUN PLAY</div>
+                </div>
+            </div>
+            <div class="card m-0 p-0 border-0">
+                <img src="/pic/body/S1_Nexta_BG.png" alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="title mt-auto text-center">NEXTA</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-session">
+            <img src="/pic/body/S2_SkinAqua_BG.png" alt="" class="w-100">
+
+            <div class="home-product d-flex justify-content-between align-items-center">
+                <div class="product-title">
+                    <b>Sản phẩm đạt chuẩn GMP với công nghệ dưỡng ẩm khoa học từ nhật bản</b>
+                    <h4>Chống nắng phổ rộng bảo vệ 360 độ</h4>
+                </div>
+                <div class="product-slider">
+                    <div class="item item1">
+                        <div class="product-image">
+                            <img src="/pic/product/SKA_1.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item2">
+                        <div class="product-image">
+                            <img src="/pic/product/SKA_2.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item3">
+                        <div class="product-image">
+                            <img src="/pic/product/SKA_3.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item4">
+                        <div class="product-image">
+                            <img src="/pic/product/SKA_4.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item5">
+                        <div class="product-image">
+                            <img src="/pic/product/TU_1.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item6">
+                        <div class="product-image">
+                            <img src="/pic/product/TU_2.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item7">
+                        <div class="product-image">
+                            <img src="/pic/product/TU_3.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="product-image">
+                            <img src="/pic/product/TU_4.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-UV text-center">
+                <h5 class="card-title">Chỉ số UV Index hôm nay</h5>
+                <div class="date-UV">Today</div>
+                <div class="m-3">
+                    <select id="UV-List" class="UV-List">
+                        <option value="12">HỒ CHÍ MINH</option><option value="14">HÀ NỘI</option><option value="11">CẦN THƠ</option><option value="13">ĐÀ NẴNG</option><option value="14">HẢI PHÒNG</option><option value="12">BIÊN HÒA</option><option value="12">NHA TRANG</option><option value="12">BÌNH DƯƠNG</option><option value="12">BÀ RỊA VŨNG TÀU</option><option value="13">HUẾ</option>
+                    </select>
+                </div>
+                <div class="UV-Card">
+                    <div class="UV-Info">
+                        <span class="UV-value">12</span>
+                        <p>Buộc phải chống nắng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-session">
+            <img src="/pic/body/S2_ToneUp_BG.png" alt="" class="w-100">
+
+            <div class="home-product d-flex justify-content-between align-items-center">
+                <div class="product-title">
+                    <b>Chống nắng tối đa, duy nhất trên thị trường với 4 sắc kem,hiệu chỉnh mọi tông da</b>
+                    <h4>Kháng UV phổ rộng hiệu chỉnh mọi loại da</h4>
+                </div>
+                <div class="product-slider">
+                    <div class="item item1">
+                        <div class="product-image">
+                            <img src="/pic/product/SKA_1.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item2">
+                        <div class="product-image">
+                            <img src="/pic/product/SKA_2.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item3">
+                        <div class="product-image">
+                            <img src="/pic/product/SKA_3.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item4">
+                        <div class="product-image">
+                            <img src="/pic/product/SKA_4.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item5">
+                        <div class="product-image">
+                            <img src="/pic/product/TU_1.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item6">
+                        <div class="product-image">
+                            <img src="/pic/product/TU_2.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item7">
+                        <div class="product-image">
+                            <img src="/pic/product/TU_3.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="product-image">
+                            <img src="/pic/product/TU_4.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-UV text-center">
+                <h5 class="card-title">Chỉ số UV Index hôm nay</h5>
+                <div class="date-UV">Today</div>
+                <div class="m-3">
+                    <select id="UV-List" class="UV-List">
+                        <option value="12">HỒ CHÍ MINH</option><option value="14">HÀ NỘI</option><option value="11">CẦN THƠ</option><option value="13">ĐÀ NẴNG</option><option value="14">HẢI PHÒNG</option><option value="12">BIÊN HÒA</option><option value="12">NHA TRANG</option><option value="12">BÌNH DƯƠNG</option><option value="12">BÀ RỊA VŨNG TÀU</option><option value="13">HUẾ</option>
+                    </select>
+                </div>
+                <div class="UV-Card">
+                    <div class="UV-Info">
+                        <span class="UV-value">12</span>
+                        <p>Buộc phải chống nắng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-session">
+            <img src="/pic/body/S2_Sunplay_BG.png" alt="" class="w-100">
+
+            <div class="home-product d-flex justify-content-between align-items-center">
+                <div class="product-title">
+                    <b>Ngừa đen sạm vượt trội khi vận động nhiều giờ ngoài trời liền</b>
+                    <h4>Chống nắng cực mạnh, khuấy đảo mùa hè</h4>
+                </div>
+                <div class="product-slider">
+                    <div class="item item1">
+                        <div class="product-image">
+                            <img src="/pic/product/Sunplay_1.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item2">
+                        <div class="product-image">
+                            <img src="/pic/product/Sunplay_2.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item3">
+                        <div class="product-image">
+                            <img src="/pic/product/Sunplay_3.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item4">
+                        <div class="product-image">
+                            <img src="/pic/product/Sunplay_4.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item5">
+                        <div class="product-image">
+                            <img src="/pic/product/Sunplay_1.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item6">
+                        <div class="product-image">
+                            <img src="/pic/product/Sunplay_2.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item7">
+                        <div class="product-image">
+                            <img src="/pic/product/Sunplay_3.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="product-image">
+                            <img src="/pic/product/Sunplay_4.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-UV text-center">
+                <h5 class="card-title">Chỉ số UV Index hôm nay</h5>
+                <div class="date-UV">Today</div>
+                <div class="m-3">
+                    <select id="UV-List" class="UV-List">
+                        <option value="12">HỒ CHÍ MINH</option><option value="14">HÀ NỘI</option><option value="11">CẦN THƠ</option><option value="13">ĐÀ NẴNG</option><option value="14">HẢI PHÒNG</option><option value="12">BIÊN HÒA</option><option value="12">NHA TRANG</option><option value="12">BÌNH DƯƠNG</option><option value="12">BÀ RỊA VŨNG TÀU</option><option value="13">HUẾ</option>
+                    </select>
+                </div>
+                <div class="UV-Card">
+                    <div class="UV-Info">
+                        <span class="UV-value">12</span>
+                        <p>Buộc phải chống nắng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-session">
+            <img src="/pic/body/S2_Nexta_BG.png" alt="" class="w-100">
+
+            <div class="home-product d-flex justify-content-between align-items-center">
+                <div class="product-title">
+                    <b>Tạo màng chống nắng bền bỉ, dưỡng ẩm sâu từ serum cao cấp
+                    </b>
+                    <h4>Ngừa sạm nám, trẻ hoá da
+                    </h4>
+                </div>
+                <div class="product-slider">
+                    <div class="item item1">
+                        <div class="product-image">
+                            <img src="/pic/product/Nexta_1.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item2">
+                        <div class="product-image">
+                            <img src="/pic/product/Nexta_2.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item3">
+                        <div class="product-image">
+                            <img src="/pic/product/Nexta_1.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item4">
+                        <div class="product-image">
+                            <img src="/pic/product/Nexta_2.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item5">
+                        <div class="product-image">
+                            <img src="/pic/product/Nexta_1.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item6">
+                        <div class="product-image">
+                            <img src="/pic/product/Nexta_2.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item7">
+                        <div class="product-image">
+                            <img src="/pic/product/Nexta_1.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                    <div class="item item8">
+                        <div class="product-image">
+                            <img src="/pic/product/Nexta_2.png" alt="" width="200px" height="290px">
+                        </div>
+                        <div class="product-name">
+                            Dayy la Name
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-UV text-center">
+                <h5 class="card-title">Chỉ số UV Index hôm nay</h5>
+                <div class="date-UV">Today</div>
+                <div class="m-3">
+                    <select id="UV-List" class="UV-List">
+                        <option value="12">HỒ CHÍ MINH</option><option value="14">HÀ NỘI</option><option value="11">CẦN THƠ</option><option value="13">ĐÀ NẴNG</option><option value="14">HẢI PHÒNG</option><option value="12">BIÊN HÒA</option><option value="12">NHA TRANG</option><option value="12">BÌNH DƯƠNG</option><option value="12">BÀ RỊA VŨNG TÀU</option><option value="13">HUẾ</option>
+                    </select>
+                </div>
+                <div class="UV-Card">
+                    <div class="UV-Info">
+                        <span class="UV-value">12</span>
+                        <p>Buộc phải chống nắng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+
+</html>

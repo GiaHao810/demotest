@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Images</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 500px; /* Set your desired height */
+            overflow: hidden;
+        }
+        .slider ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .slider ul li {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .slider ul li.img1 {
+            background-image: url('https://via.placeholder.com/800x500');
+        }
+        .slider ul li.img2 {
+            background-image: url('https://via.placeholder.com/800x500/ff0000');
+        }
+        .slider ul li.img3 {
+            background-image: url('https://via.placeholder.com/800x500/00ff00');
+        }
+        .slider ul li.img4 {
+            background-image: url('https://via.placeholder.com/800x500/0000ff');
+        }
+        .slider ul li.img5 {
+            background-image: url('https://via.placeholder.com/800x500/ffff00');
+        }
+    </style>
+</head>
+<body>
+    <section class="container-fluid p-0">
+        <div class="slider">
+            <ul>
+                <li class="img1"></li>
+                <li class="img2"></li>
+                <li class="img3"></li>
+                <li class="img4"></li>
+                <li class="img5"></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
